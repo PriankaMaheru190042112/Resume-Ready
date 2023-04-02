@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<!--   <form action = "" method = "post">-->
+<!--    {% csrf_token %}-->
+<!--    {{res.as_p}}-->
+
+<!--   <div class="inst">-->
+<!--   {{inst.as_p}}-->
+
+<!--   </div>-->
+<!--    <div class="inst">-->
+<!--   {{inst.as_p}}-->
+
+<!--   </div>-->
+
+<!--   <div class="skill">-->
+<!--    {{skill.as_p}}-->
+<!--   </div>-->
+
+
+<!--  <div class="exp">-->
+<!--       {{exp.as_p}}-->
+<!--  </div>-->
+
+
+<!--       <input type="submit" value=Submit">-->
+<!--</form>-->
+
+<form method="post" action="">
+    {{ formset.management_form }}
+    <table>
+        {% for form in formset %}
+        {{ form }}
+        {% endfor %}
+    </table>
+</form>
+
+
+
+</body>
+
+</html>
